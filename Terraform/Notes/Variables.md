@@ -4,7 +4,7 @@
 
 1. Interactive Mode
     Look at the files main.tf and variables.tf.
-    If we supply the variables in this manner then during the execution the console will promot us to type the value 
+    If we supply the variables in this manner then during the execution the console will prompt us to type the value 
     of the variable in an interactive mode.
 
 ```terraform:
@@ -19,7 +19,7 @@ resource "random_pet" "my-pet" {
 }
 ```
 
-```terraform:
+```tf:
 variable "filename" {
 }
 variable "content" {
