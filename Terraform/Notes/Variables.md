@@ -50,7 +50,9 @@ terraform apply
 ```
 
 ## 4. Variable Definition Files
-    When we are dealing with a lot of variable, then we can use a variable definition file. These variable definition files can be named anything, however they should end with the extension .TFVARS or .TFVARS.JSON. Look at the imaginary variable definition file by the name terraform.tfvars below to see how it's contents look.
+    When we are dealing with a lot of variable, then we can use a variable definition file. These variable
+    definition files can be named anything, however they should end with the extension .TFVARS or .TFVARS.JSON. 
+    Look at the imaginary variable definition file by the name terraform.tfvars below to see how it's contents look.
 ```terraform:
 filename = "/root/pets.txt"
 content = "We love pets"
