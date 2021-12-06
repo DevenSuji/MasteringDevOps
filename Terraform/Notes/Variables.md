@@ -1,4 +1,4 @@
-# Variables
+# <b><u>Variables</u></b>
 
 ## Passing the variables
 
