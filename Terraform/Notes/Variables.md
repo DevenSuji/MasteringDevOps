@@ -38,4 +38,13 @@ variable "length" {
 terraform apply -var "filename=/root/pets.txt" -var "content=We love pets" -var "prefix=Mrs" -var "seperator=." -var "length=2"
 ```
 
-
+## 3. Environment Variables
+    The values of the variables can be passed using the Environment Variables as well as shown below.
+```terraform:
+export TF_VAR_filename="/root/pets.txt"
+export TF_VAR_content="We love pets"
+export TF_VAR_prefix="Mrs"
+export TF_VAR_seperator="."
+export TF_VAR_length="2"
+terraform apply
+```
