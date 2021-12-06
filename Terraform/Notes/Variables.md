@@ -48,3 +48,9 @@ export TF_VAR_seperator="."
 export TF_VAR_length="2"
 terraform apply
 ```
+
+```python:
+a = 89
+b = 99
+print(a+b)
+```
