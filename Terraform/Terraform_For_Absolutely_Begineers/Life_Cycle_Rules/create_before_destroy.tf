@@ -6,3 +6,4 @@ resource "local_file" "pet" {
     create_before_destroy = true # This life cycle policy will ensure that the file is created before the resource is destroyed.
   }
 }
+
