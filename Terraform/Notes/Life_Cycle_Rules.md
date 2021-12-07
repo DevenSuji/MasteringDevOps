@@ -10,3 +10,17 @@ resource "local_file" "pet" {
   }
 }
 ```
+
+# Prevent Destroy
+    This life cycle prevents the resource from being destroyed.
+
+```terraform:
+resource "local_file" "pet" {
+  filename    = "pet.txt"
+  content = "I hate pets"
+
+  lifecycle {
+    prevent_destroy = true 
+  }
+}
+```
