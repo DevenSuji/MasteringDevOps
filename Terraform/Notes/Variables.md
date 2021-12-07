@@ -69,7 +69,7 @@ length = "2"
 
 | Precedence Order | Option |  
 |:-----------------|:-------|  
-| 1 (Highest Precedence) | -var or -var-file (command line flags) |
+| 1 (Highest Precedence) | -var or -var-file variable.tfvars (command line flags) |
 | 2 (Second highest) | *.auto.tfvars (alphabetical order) |
 | 3 (Third Highest) | terraform.tfvars |
 | 4 (Least Precedence) | Environment Variables |
