@@ -51,9 +51,9 @@ terraform apply
 
 ## 4. Variable Definition Files
     When we are dealing with a lot of variable, then we can use a variable definition file. These variable
-    definition files can be named anything, however they should end with the extension .TFVARS or .TFVARS.JSON 
-    or *.AUTO.TFVARS or *.AUTO.TFVARS.JSON. Variable file when named in this convention are auto loaded during the execution.
-    
+    definition files can be named anything, however they should end with the extension *** .TFVARS or .TFVARS.JSON 
+    or *.AUTO.TFVARS or *.AUTO.TFVARS.JSON.*** Variable file when named in this convention are auto loaded during the execution.
+
     Look at the imaginary variable definition file by the name terraform.tfvars below to see how it's contents look.
 
     The variable
@@ -64,3 +64,12 @@ prefix = "Mrs"
 seperator = "."
 length = "2"
 ``` 
+
+## Variable Precedence
+
+| Precedence Order | Option |  
+|:-----------------|:-------|  
+| 1 (Highest Precedence) | -var or -var-file (command line flags) |
+| 2 (Second highest) | *.auto.tfvars (alphabetical order) |
+| 3 (Third Highest) | terraform.tfvars |
+| 4 (Least Precedence) | Environment Variables |
