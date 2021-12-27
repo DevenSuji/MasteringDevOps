@@ -6,6 +6,9 @@ bin-release/
 
 # Other files and folders
 .settings/
+.terraform
+*.tfstate
+*.tfstate.backup
 
 # Executables
 *.swf
